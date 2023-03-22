@@ -35,13 +35,7 @@ python = ">=3.7.1, <4.0"
 [tool.poetry.dev-dependencies]
 autoflake = "*"
 black = "*"
-flake8 = "*"
-flake8-bugbear = "*"
-flake8-builtins = "*"
-flake8-comprehensions = "*"
-flake8-debugger = "*"
-flake8-eradicate = "*"
-flake8-logging-format = "*"
+ruff = "*"
 isort = "*"
 mkdocstrings = {version = ">=0.18", extras = ["python"]}
 mkdocs-material = "*"
@@ -93,3 +87,45 @@ warn_redundant_casts = true
 warn_return_any = true
 check_untyped_defs = true
 show_error_codes = true
+
+[tool.ruff]
+exclude = [
+    ".git",
+    "__pycache__",
+    "old",
+    "build",
+    "dist",
+    ".venv",
+    ".eggs",
+    ".tox",
+]
+ignore = [
+    "A003",
+    "B008",
+    "E501",
+]
+select = [
+    "A",
+    "B",
+    "C9",
+    "E",
+    "F",
+    "N",
+    "W",
+]
+
+[tool.ruff.mccabe]
+# Enables maccabe complexity checks
+#   see https://github.com/PyCQA/mccabe
+max-complexity = 10
+
+[tool.ruff.pep8-naming]
+classmethod-decorators = [
+    "classmethod",
+    "validator",
+    "root_validator",
+]
+
+[tool.ruff.per-file-ignores]
+# star imports in `__init__.py` files are ok
+"*/__init__.py" = ["F401"]
