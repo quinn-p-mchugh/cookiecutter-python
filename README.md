@@ -2,56 +2,58 @@
 
 A [cookiecutter](https://cookiecutter.readthedocs.io/en/latest/README.html) (project template) for rapidly developing new open source Python packages. Best practices with all the modern bells and whistles included.
 
-![Demo](https://github.com/woltapp/wolt-python-package-cookiecutter/raw/master/demo.gif)
+## Inspired By
 
-## Example projects which use Wolt Python Package Cookiecutter
-* [jerry-git/pytest-split](https://github.com/jerry-git/pytest-split)
+This project template is a remix of and includes the best features from the following cookiecutter templates...
+
+- [woltapp/wolt-python-package-cookiecutter: Cookiecutter for rapidly creating modern & high-quality Python packages](https://github.com/woltapp/wolt-python-package-cookiecutter)
+- [audreyfeldroy/cookiecutter-pypackage: Cookiecutter template for a Python package.](https://github.com/audreyfeldroy/cookiecutter-pypackage)
 
 ## Features
 
 #### Automatic updates to the projects generated from this cookiecutter
 
-* Powered by [cruft](https://cruft.github.io/cruft/)
-* Keep your project up-to-date with best practices
+- Powered by [cruft](https://cruft.github.io/cruft/)
+- Keep your project up-to-date with best practices
 
 #### Continuous integration
 
-* Powered by [Github Actions](https://github.com/features/actions)
-* Testing against multiple different versions
+- Powered by [Github Actions](https://github.com/features/actions)
+- Testing against multiple different versions
 
 #### Documentation
 
-* Automatically published as [GitHub Pages](https://pages.github.com/)
-* Powered by [mkdocs-material](https://github.com/squidfunk/mkdocs-material)
-* Auto-generated API documentation from docstrings via [mkdocstrings](https://github.com/mkdocstrings/mkdocstrings)
-* See the extensive list of [MkDocs plugins](https://github.com/mkdocs/mkdocs/wiki/MkDocs-Plugins) which can help you
+- Automatically published as [GitHub Pages](https://pages.github.com/)
+- Powered by [mkdocs-material](https://github.com/squidfunk/mkdocs-material)
+- Auto-generated API documentation from docstrings via [mkdocstrings](https://github.com/mkdocstrings/mkdocstrings)
+- See the extensive list of [MkDocs plugins](https://github.com/mkdocs/mkdocs/wiki/MkDocs-Plugins) which can help you
  to tune the documentation to fit your project's needs
 
 #### Automated releases
 
-* Publishing to [PyPI](https://pypi.org/) when a release is made in GitHub
+- Publishing to [PyPI](https://pypi.org/) when a release is made in GitHub
 
 #### Changelog management
 
-* Gently enforced: [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
-* GitHub releases get their description automatically populated based on the changelog content
-* The _Unreleased_ section is automatically updated when a release is done
-* Changelog is embedded in the documentation
+- Gently enforced: [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
+- GitHub releases get their description automatically populated based on the changelog content
+- The _Unreleased_ section is automatically updated when a release is done
+- Changelog is embedded in the documentation
 
 #### Bells and whistles
 
-* [Poetry](https://python-poetry.org/docs/) for managing dependencies and packaging
-* [pre-commit](https://pre-commit.com/) for running all the goodies listed below
-* [mypy](https://flake8.pycqa.org/en/latest/) for static type checking
-* [flake8](https://flake8.pycqa.org/en/latest/) (with multiple plugins) for linting (e.g. style and complexity checks, commented code, etc.)
-* [black](https://black.readthedocs.io/en/stable/) for auto-formatting the code
-* [isort](https://pycqa.github.io/isort/) for auto-sorting imports
-* [autoflake](https://github.com/myint/autoflake) for auto-removing unused imports
+- [Poetry](https://python-poetry.org/docs/) for managing dependencies and packaging
+- [pre-commit](https://pre-commit.com/) for running all the goodies listed below
+- [mypy](https://flake8.pycqa.org/en/latest/) for static type checking
+- [flake8](https://flake8.pycqa.org/en/latest/) (with multiple plugins) for linting (e.g. style and complexity checks, commented code, etc.)
+- [black](https://black.readthedocs.io/en/stable/) for auto-formatting the code
+- [isort](https://pycqa.github.io/isort/) for auto-sorting imports
+- [autoflake](https://github.com/myint/autoflake) for auto-removing unused imports
 
 #### Automation
 
-* Updates to the best practices (via GHA workflow which runs `cruft update` and creates a PR)
-* Dependency updates (via GHA workflow which creates a PR)
+- Updates to the best practices (via GHA workflow which runs `cruft update` and creates a PR)
+- Dependency updates (via GHA workflow which creates a PR)
 
 ## Usage
 
@@ -100,8 +102,8 @@ Generate [personal access token](https://docs.github.com/en/github/authenticatin
 and use it as the value for `AUTO_UPDATE_GITHUB_TOKEN` secret. When creating the access token, the following
  permissions have to be granted
 
-* repo
-* workflow
+- repo
+- workflow
 
 ### After the first release
 
