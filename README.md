@@ -7,6 +7,7 @@ A [cookiecutter](https://cookiecutter.readthedocs.io/en/latest/README.html) (pro
 This project template is a remix of and includes the best features from the following cookiecutter templates...
 
 - [woltapp/wolt-python-package-cookiecutter: Cookiecutter for rapidly creating modern & high-quality Python packages](https://github.com/woltapp/wolt-python-package-cookiecutter)
+
 - [audreyfeldroy/cookiecutter-pypackage: Cookiecutter template for a Python package.](https://github.com/audreyfeldroy/cookiecutter-pypackage)
 
 ## Features
