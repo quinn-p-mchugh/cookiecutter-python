@@ -5,26 +5,6 @@ description = "Modern cookiecutter project template for python"
 authors = ["Quinn McHugh <qpmchugh@gmail.com>"]
 license = "MIT"
 readme = "README.md"
-packages = [{include = "cookiecutter_python"}]
-
-[tool.poetry.dependencies]
-python = "^3.11"
-
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
-
-
-
-
-[tool.poetry]
-name = "cookiecutter-python"
-version = "0.1.0"
-description = "Modern cookiecutter project template for python"
-authors = ["Quinn McHugh <qpmchugh@gmail.com>"]
-license = "MIT"
-readme = "README.md"
 
 documentation = "https://quinn-p-mchugh.github.io/cookiecutter-python"
 homepage = "https://quinn-p-mchugh.github.io/cookiecutter-python"
