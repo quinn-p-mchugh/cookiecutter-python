@@ -1,0 +1,14 @@
+{
+  "project_title": "My New Project",
+  "project_name": "{{ cookiecutter.project_title.replace(' ', '-').lower() }}",
+  "package_name": "{{ cookiecutter.project_name.replace('-', '_') }}",
+  "description": "",
+  "author_name": "First Last",
+  "email": "first.last@fortrobotics.com",
+  "github_user": "your-github-username",
+  "version": "0.1.0",
+  "copyright_year": "{% now 'utc', '%Y' %}",
+  "license": ["MIT", "Apache-2.0", "GPL-3.0-only", "No License"],
+  "use_mkdocs": true,
+  "add_click_cli": false
+}

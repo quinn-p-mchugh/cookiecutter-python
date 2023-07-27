@@ -1,0 +1,51 @@
+[tool.poetry]
+
+name = "{{ cookiecutter.project_name }}"
+version = "0.1.0"
+description = "{{ cookiecutter.description }}"
+authors = ["{{ cookiecutter.author_name }} <{{ cookiecutter.email }}>"]
+license = "{{ cookiecutter.license }}"
+readme = "README.md"
+homepage = "https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}"
+repository = "https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}"
+documentation = "https://{{cookiecutter.project_name}}.readthedocs.io"
+packages = [{ include = "{{cookiecutter.package_name}}", from = "src" }]
+
+[tool.poetry.urls]
+"Releases" = "https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}/releases"
+"Issues" = "https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}/issues"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.group.dev.dependencies]
+
+# Template Upkeep
+cruft = "^2.15.0"
+
+# Testing
+pytest = "^7.4.0"
+tox = "^4.6.0"
+pre-commit = "^3.3.3"
+
+# Code Quality
+ruff = "^0.0.277"
+pyright = "^1.1.316"
+black = "^23.3.0"
+coverage = "^6.1.2"
+coverage-badge = "^1.1.0"
+
+# Documentation
+mkdocs = "^1.4.3"
+mkdocs-material = "^9.1.18"
+Pygments = "^2.15.1"
+mkdocstrings = "^0.22.0"
+mkdocs-click = "^0.8.0"
+
+# Security
+bandit = "^1.7.5"
+safety = "^2.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
