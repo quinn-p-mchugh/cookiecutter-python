@@ -1,13 +1,5 @@
-Shortform LogoSettingsClose popup
-Intro Image
-Get an instant summary of this page
-Along with context, alternative points of view, and links to learn more
-
-Get summary
-You have early access to a new product. Give us feedback on how to make it better: extension@shortform.com
-
-# Created by https://www.toptal.com/developers/gitignore/api/visualstudio,python
-# Edit at https://www.toptal.com/developers/gitignore?templates=visualstudio,python
+# Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,visualstudio,python
+# Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,visualstudio,python
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
@@ -180,6 +172,25 @@ poetry.toml
 
 # LSP config files
 pyrightconfig.json
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+.ionide
 
 ### VisualStudio ###
 ## Ignore Visual Studio temporary files, build results, and
@@ -557,15 +568,9 @@ MigrationBackup/
 FodyWeavers.xsd
 
 # VS Code files for those working on multiple tools
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
 *.code-workspace
 
 # Local History for Visual Studio Code
-.history/
 
 # Windows Installer files from build outputs
 *.cab
@@ -580,6 +585,9 @@ FodyWeavers.xsd
 ### VisualStudio Patch ###
 # Additional files built by Visual Studio
 
-# End of https://www.toptal.com/developers/gitignore/api/visualstudio,python
+# End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,visualstudio,python
 Trigger Extension Button
 Ask AI to edit or generate...
+Loading...
+
+Loading...
