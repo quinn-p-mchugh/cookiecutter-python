@@ -1,0 +1,25 @@
+{
+  "template": "https://github.com/quinn-p-mchugh/cookiecutter-cookiecutter",
+  "commit": "3dd0b64d50d97c67984246e21cb16645b1dc35a1",
+  "checkout": null,
+  "context": {
+    "cookiecutter": {
+      "template_title": "Python Cookiecutter Template",
+      "template_slug": "cookiecutter-python",
+      "description": "Cookiecutter template for creating miscellaneous Python projects.",
+      "author_name": "Quinn McHugh",
+      "email": "qpmchugh@gmail.com",
+      "github_user": "quinn-p-mchugh",
+      "version": "0.1.0",
+      "copyright_year": "2024",
+      "license": "MIT",
+      "_copy_without_render": [
+        "cookiecutter.json",
+        "workflows/cruft-update.yml",
+        "{% raw %}{{ cookiecutter.project_slug }}{% endraw %}/*"
+      ],
+      "_template": "https://github.com/quinn-p-mchugh/cookiecutter-cookiecutter"
+    }
+  },
+  "directory": null
+}
